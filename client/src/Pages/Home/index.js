@@ -1,13 +1,17 @@
 /* eslint-disable jsx-a11y/alt-text */
-import {HomeImage, HomeTitle, HomeText } from "./styles";
-
+import {HomeImage, HomeTitle, HomeText, ButonStyle } from "./styles";
+import Card from "./BoxFlip/Crd";
+import "./BoxFlip/styles.css";
 
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
-import LoLmap from '../../image/LoLmap.png'
 
 const Home = () => {
+
+
+    
+    /*
     const [backendData, setBackendData] = useState([])
 
     useEffect(()=>{
@@ -18,23 +22,21 @@ const Home = () => {
         })
       },[])
 
+      <p>{backendData.text}</p>
+
+       */
     return (
-
+     
     <div>
-    <HomeTitle>
-        Titulo
-    </HomeTitle>
-
     <HomeImage>        
-        <img src={LoLmap}/>  
+        <p>Runeterra</p>
+        <ButonStyle>
+        <button type="button">Begin exploring</button>
+        </ButonStyle>        
     </HomeImage>
 
+        
 
-    <HomeText>
-
-       <p>{backendData.text}</p>
-
-    </HomeText>
     </div>
    );
   }
