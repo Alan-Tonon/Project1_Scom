@@ -7,10 +7,11 @@ export default function Navbar() {
         Site Name
       </Link>
       <ul>
-        <CustomLink to="/classe">Classe</CustomLink>
+        <CustomLink to="/Classes">Classe</CustomLink>
         <CustomLink to="/raca">Raca</CustomLink>
         <CustomLink to="/quiz">Quiz</CustomLink>
         <CustomLink to="/dados">Dados</CustomLink>
+        <CustomLink to="/email">Email</CustomLink>
       </ul>
     </nav>
   )

@@ -1,9 +1,10 @@
 import Navbar from "./Navbar"
 import Home from "../Home/index"
-import Classe from "../Classes/index"
+import Classes from "../Classes/index"
 import Raca from "../Raças/index"
 import Quiz from "../Quiz/index"
 import Dados from "../Dados/index"
+import Email from "../EnviarEmail/Index";
 import { Route, Routes } from "react-router-dom"
 
 function Top() {
@@ -13,10 +14,11 @@ function Top() {
       <div className="Top">
         <Routes>
           <Route path="/" element={<Home/>} />
-          <Route path="/classe" element={<Classe />} />
+          <Route path="/Classes" element={<Classes/>} />
           <Route path="/raca" element={<Raca />} />
           <Route path="/quiz" element={<Quiz />} />
           <Route path="/dados" element={<Dados />} />
+          <Route path="/email" element={<Email />} />
         </Routes>
       </div>
 
