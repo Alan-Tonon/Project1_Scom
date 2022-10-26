@@ -3,7 +3,7 @@ import Home from "../Home/index"
 import Classes from "../Classes/index"
 import Raca from "../Raças/index"
 import Quiz from "../Quiz/index"
-import Dados from "../Dados/index"
+import Dados from "../Dados/RollDice"
 import Email from "../EnviarEmail/Index";
 import { Route, Routes } from "react-router-dom"
 
