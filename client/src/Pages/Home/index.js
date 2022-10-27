@@ -6,6 +6,8 @@ import ScrollButton from "../../Components/ScrollBack/index";
 
 import Popup from "../../Components/Popup/index";
 
+import FucYoutube from "../../Components/Youtube/index";
+
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
@@ -78,6 +80,7 @@ const Home = () => {
         </p> 
     </HomeText>
 
+        <FucYoutube/>
     </div>
    );
   }
