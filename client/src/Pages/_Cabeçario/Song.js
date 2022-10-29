@@ -9,7 +9,7 @@ var sound = null;
 var stringData = 'http://localhost:5000/Enemy/'
 
 const options = [
-  'http://localhost:5000/Enemy/', 'http://localhost:5000/Dystopia/', 'http://localhost:5000/Playground/'
+  'Enemy', 'Dystopia', 'Playground'
 ];
 
 const defaultOption = options[0];
@@ -25,7 +25,9 @@ const Song = () => {
     }
     sound = new Howl({
         src: [stringData],
-        html5:true
+        html5:true,
+        autoplay: true,
+        loop: true
     });
     sound.play();
   } 
@@ -57,7 +59,7 @@ const Song = () => {
     function changeSong(option)
     {
       console.log('You selected ', option.label)
-      stringData = option.label
+      stringData = 'http://localhost:5000/' + option.label + '/'
     }
 
     return (

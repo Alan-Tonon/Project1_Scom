@@ -15,6 +15,9 @@ import axios from 'axios'
 
 import LoLmap from '../../image/LoLmap.png'
 
+//map things 
+import {MapContainer, TileLayer, ImageOverlay} from 'react-leaflet'
+
 const Home = () => {
     const [backendData, setBackendData] = useState([])
 
@@ -26,10 +29,16 @@ const Home = () => {
         })
       },[])
 
+      const bounds = [
+        [-100, -100],
+        [500, 500]
+      ];
+
     return (
     <HomeFlex>
-    <Popup/>
-
+    {/*<Popup/>
+    
+    /*
     <HomeImage>
 
         <Map src = {LoLmap}/>
@@ -44,9 +53,27 @@ const Home = () => {
 
         <div>
         <ScrollButton/>  
-        </div>
+        </div>  
 
-    </HomeImage>
+    </HomeImage> scrollWheelZoom={false} dragging={false} touchZoom={false} doubleClickZoom={false} 
+    */}
+
+    <MapContainer zoom = {1}  maxBounds = {bounds} maxZoom={3} bounds = {bounds}>
+        {/*<TileLayer
+            attribution="its offline"
+            url={'../../../Map/LoLmap.jpg'} 
+            noWrap={true}
+        />*/}
+
+
+        <ImageOverlay
+            interactive={true}
+            url= '../../../Map/LoLmap.jpg'
+            bounds = {bounds}
+            zIndex={10}
+          />
+
+    </MapContainer>
 
     <HomeText>
         <p>{backendData.text}</p>

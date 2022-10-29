@@ -1,0 +1,9 @@
+.leaflet-container{
+    width: 50vw;
+    height: 50vh;
+}
+
+.tile-layer-class  { 
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
