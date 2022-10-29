@@ -13,6 +13,14 @@ fs.readFile('loren_epsun.txt', 'utf8',(err, data)=>
     string_data = data
 })
 
+let demacia = `Demacia é um reino altivo e legítimo com 
+uma prestigiosa história militar. 
+Fundada após as Guerras Rúnicas para ser um local livre de qualquer magia, 
+alguns sugerem que a era dourada de Demacia já passou, a menos que a cidade se 
+mostre capaz de se adaptar ao novo mundo. Autossuficiente e agrária, sua sociedade 
+é inerentemente defensiva e insular, valorizando a justiça, a honra e o dever acima 
+de tudo.`;
+
 app.use(express.static('public'));
 
 app.get('/Dystopia', (req, res) => {
@@ -28,9 +36,11 @@ app.get('/Playground', (req, res) => {
 })
 
 app.get('/api', (req, res) => {
-  res.json({"text": string_data})
+  res.json({
+    "text": string_data,
+    "demacia":  demacia
+  })
 })
-
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)
