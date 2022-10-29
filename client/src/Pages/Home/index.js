@@ -34,33 +34,37 @@ const Home = () => {
         [500, 500]
       ];
 
+      const mbounds = [
+        [-150, -150],
+        [550, 550]
+      ];
+
       const freljordPos= [67, 100]
       const demaciaPos= [30, 70]
       const noxusPos= [55, 210]
       const ioniaPos= [66, 360]
       const piltoverPos= [-10, 270]
-      const aguasDeSentinaPos= [-68, 450]
+      const aguasDeSentinaPos= [-30, 368]
       const targonPos= [-72, 145]
-      const shurimaPos= [67, 100]
-      const ixtalPos= [67, 100]
+      const shurimaPos= [-67, 230]
+      const ixtalPos= [-65, 295]
       const ilhaDasSombrasPos= [-68, 450]
-
 
     return (
     <HomeFlex>
     {/*<Popup/>*/}
 
-    <MapContainer zoom = {1}  maxBounds = {bounds} maxZoom={3} bounds = {bounds}>
+    <MapContainer zoom = {1}  maxBounds = {mbounds} maxZoom={3} bounds = {bounds}>
         <ImageOverlay
             interactive={true}
             url= '../../../Map/LoLmap.jpg'
             bounds = {bounds}
             zIndex={10}
-          />
+        />
 
         <Marker position={freljordPos}>
             <Popup>
-                Freljord
+                <p>{backendData.freljord}</p>
             </Popup>
             <Tooltip sticky>Freljord</Tooltip>
         </Marker>
@@ -74,44 +78,58 @@ const Home = () => {
 
         <Marker position={noxusPos}>
             <Popup>
-                Noxus
+                <p>{backendData.noxus}</p>
             </Popup>
             <Tooltip sticky>Noxus</Tooltip>
         </Marker>
 
         <Marker position={ioniaPos}>
             <Popup>
-                Ionia
+                <p>{backendData.ionia}</p>
             </Popup>
             <Tooltip sticky>Ionia</Tooltip>
         </Marker>
 
         <Marker position={piltoverPos}>
             <Popup>
-                Piltover e Zaun
+                <p>{backendData.piltover}</p>
             </Popup>
             <Tooltip sticky>Piltover e Zaun</Tooltip>
         </Marker>
 
         <Marker position={aguasDeSentinaPos}>
             <Popup>
-                
+                <p>{backendData.agua}</p>
             </Popup>
             <Tooltip sticky>Águas de Sentina</Tooltip>
         </Marker>
 
         <Marker position={ilhaDasSombrasPos}>
             <Popup>
-                
+                <p>{backendData.sombras}</p>
             </Popup>
             <Tooltip sticky>Ilha Das Sombras</Tooltip>
         </Marker>
 
         <Marker position={targonPos}>
             <Popup>
-                
+                <p>{backendData.targon}</p>
             </Popup>
             <Tooltip sticky>Targon</Tooltip>
+        </Marker>
+
+        <Marker position={ixtalPos}>
+            <Popup>
+                <p>{backendData.ixtal}</p>
+            </Popup>
+            <Tooltip sticky>Ixtal</Tooltip>
+        </Marker>
+
+        <Marker position={shurimaPos}>
+            <Popup>
+                <p>{backendData.shurima}</p>
+            </Popup>
+            <Tooltip sticky>Shurima</Tooltip>
         </Marker>
 
 
