@@ -1,8 +1,19 @@
 import React, { Component, useState } from 'react'
-import ToggleSwitch from "./ToggleSwitch";
 import {Howl} from "howler"
 import "./ToggleSwitch.css";
+
+import Dropdown from 'react-dropdown';
+import 'react-dropdown/style.css';
+
 var sound = null;
+var stringData = 'http://localhost:5000/Enemy/'
+
+const options = [
+  'http://localhost:5000/Enemy/', 'http://localhost:5000/Dystopia/', 'http://localhost:5000/Playground/'
+];
+
+const defaultOption = options[0];
+
 const Song = () => {
 
     function playSound() {
@@ -13,7 +24,7 @@ const Song = () => {
         sound = null;
     }
     sound = new Howl({
-        src: ['http://localhost:5000/teste/'],
+        src: [stringData],
         html5:true
     });
     sound.play();
@@ -43,6 +54,12 @@ const Song = () => {
         }
     }
 
+    function changeSong(option)
+    {
+      console.log('You selected ', option.label)
+      stringData = option.label
+    }
+
     return (
       <div>
       <div onChange={triggerToggle} className="container">
@@ -56,10 +73,16 @@ const Song = () => {
           </label>
         </div>
       </div>
-
+      
+      <Dropdown options={options} 
+        onChange={changeSong} 
+        value={defaultOption} 
+        placeholder="Select an option"/>
       </div>
       
     );
   }
   
 export default Song;
+
+//onChange={this._onSelect} 

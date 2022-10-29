@@ -13,6 +13,7 @@
     "react": "^18.2.0",
     "react-animated-modal": "^1.1.1",
     "react-dom": "^18.2.0",
+    "react-dropdown": "^1.11.0",
     "react-howler": "^5.2.0",
     "react-icons": "^4.6.0",
     "react-modal": "^3.16.1",

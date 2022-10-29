@@ -16,17 +16,16 @@ fs.readFile('loren_epsun.txt', 'utf8',(err, data)=>
 
 app.use(express.static('public'));
 
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
+app.get('/Dystopia', (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Dystopia.mp3"));
+})
 
-app.get('/teste', (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "audioFile.mp3"));
-  /*
-  fs.readFile("audio.mp3", function(err, result) {
-    res.send(result.toString("base64"));
-  });*/
-  //res.json({"text": string_data})
+app.get('/Enemy', (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Enemy.mp3"));
+})
+
+app.get('/Playground', (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Playground.mp3"));
 })
 
 app.get('/api', (req, res) => {
