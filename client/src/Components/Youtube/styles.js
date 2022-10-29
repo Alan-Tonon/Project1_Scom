@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StylesYoutube = styled.div`
     text-align: justify;
     
-    padding: 150rem 5% 0;
     color:#FFFF;
     display: inline-block;
   
@@ -12,7 +11,7 @@ export const StylesYoutube = styled.div`
     display: inline-flex;
     justify-content: center;
     
-    position: absolute;
+    position: relative;
 
     flex-direction: column;
     align-items: center;

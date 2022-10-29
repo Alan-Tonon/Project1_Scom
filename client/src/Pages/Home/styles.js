@@ -47,7 +47,7 @@ export const HomeImage = styled.div`
 
     align-items: center;
     justify-content: space-around;
-    position: absolute;
+    position: relative;
     `
     export const ButonStyle = styled.div`
     display: inline-block;

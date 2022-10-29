@@ -28,7 +28,7 @@ function Popup() {
       <div>
       <HomeImage>  
         
-        <p>Você DFeja entrar no site mesmo ?</p>
+        <p>Você Deseja entrar no site mesmo ?</p>
   
         <ButonStyle onClick={() => setIsOpen(false)}>
                 Sim

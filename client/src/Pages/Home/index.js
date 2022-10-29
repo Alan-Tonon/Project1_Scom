@@ -8,7 +8,7 @@ import WhatsApp from "../../Components/Whats_button/index";
 import "../../Components/BoxFlip/styles.css";
 import ScrollButton from "../../Components/ScrollBack/index";
 
-//import Popup from "../../Components/Popup/index";
+import Popup from "../../Components/Popup/index";
 
 import FucYoutube from "../../Components/Youtube/index";
 
@@ -28,23 +28,27 @@ const Home = () => {
 
     return (
     <HomeFlex>
-    {/*<Popup/>*/}
-
+        <Popup/>
+    
     <HomeImage>  
         <WhatsApp/>
             <p>Runeterra</p> 
             <ScrollButton/>  
     </HomeImage>
+    
 
     <HomeText>
         <p>{backendData.text}</p>
     </HomeText>
+    
 
     <YtbFlex>
         {
-        //<FucYoutube/>
+        <FucYoutube/>
         }
     </YtbFlex>
+
+
     </HomeFlex>
    );
   }
