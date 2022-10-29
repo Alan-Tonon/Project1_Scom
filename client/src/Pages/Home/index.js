@@ -48,7 +48,6 @@ const Home = () => {
 
     </HomeImage>
 
-
     <HomeText>
         <p>{backendData.text}</p>
     </HomeText>

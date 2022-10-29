@@ -3,7 +3,6 @@ const path = require('path');
 const app = express()
 const port = 5000
 const fs = require('fs')
-let string_data;
 
 fs.readFile('loren_epsun.txt', 'utf8',(err, data)=>
 {
