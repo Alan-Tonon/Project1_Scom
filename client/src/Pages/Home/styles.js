@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-import LoLmap from '../../image/LoLmap.jpg'
+
+
+export const HomeFlex = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+`
+
 
 export const HomeTitle = styled.div`
     background-color: #010;
@@ -13,14 +20,15 @@ export const HomeTitle = styled.div`
     
     display: flex;
     justify-content: center;
+    align-self: stretch;
 `
+
 export const HomeImage = styled.div`
-    background-color: #010;
-    background-image: url(${LoLmap});
     width: 100%;
     height 100%;
     display: flex;
-    justify-content: center;
+
+    justify-content: space-between;
     
     font-weight: bold;
     letter-spacing: 0.05em;
@@ -30,13 +38,10 @@ export const HomeImage = styled.div`
     font-size: 100px;
     color: #f0e6d2;
     letter-spacing: 0.03em;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 
     align-items: center;
-    justify-content: space-around;
-    position: absolute;
-
-   
+    align-self: stretch;
 `
 export const ButonStyle = styled.div`
 display: inline-block;
@@ -76,4 +81,21 @@ export const HomeText = styled.div`
     display: flex;
     justify-content: center;
     margin: 10px;
+    align-self: stretch;
 `
+
+export const YtbFlex = styled.div`
+    width: 100%;
+    height 100%;
+    justify-content: center;
+    margin: 10px;
+    align-self: stretch;
+`
+
+export const Map = styled.img`
+    width: 100hv;
+    height: 100hv;
+    z-index: -1;
+    
+    position: absolute;
+`;

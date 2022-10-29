@@ -6,12 +6,14 @@ import Quiz from "../Quiz/index"
 import Dados from "../Dados/RollDice"
 import Email from "../EnviarEmail/Index";
 import { Route, Routes } from "react-router-dom"
+import Song from "./Song"
 
 function Top() {
   return (
     <>
       <Navbar/>
       <div className="Top">
+        <Song/>
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/Classes" element={<Classes/>} />
