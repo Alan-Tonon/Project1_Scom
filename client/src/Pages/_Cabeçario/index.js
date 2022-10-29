@@ -2,11 +2,11 @@ import Navbar from "./Navbar"
 import Home from "../Home/index"
 import Classes from "../Classes/index"
 import Raca from "../Raças/index"
-import Quiz from "../Quiz/index"
-import Dados from "../Dados/RollDice"
 import Email from "../EnviarEmail/Index";
+import OriginalWeb from "../PaginaOriginal/index";
 import { Route, Routes } from "react-router-dom"
 import Song from "./Song"
+import Dice from "../Dados/index"
 
 function Top() {
   return (
@@ -16,11 +16,12 @@ function Top() {
         <Song/>
         <Routes>
           <Route path="/" element={<Home/>} />
+          <Route path="/originalweb" element={<OriginalWeb/>} />
           <Route path="/Classes" element={<Classes/>} />
           <Route path="/raca" element={<Raca />} />
-          <Route path="/quiz" element={<Quiz />} />
-          <Route path="/dados" element={<Dados />} />
+          <Route path="/dados" element={<Dice />} />
           <Route path="/email" element={<Email />} />
+          <Route path="/autatication" element={<Email />} />
         </Routes>
       </div>
 

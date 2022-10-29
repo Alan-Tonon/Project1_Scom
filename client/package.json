@@ -17,6 +17,7 @@
     "react-dropdown": "^1.11.0",
     "react-howler": "^5.2.0",
     "react-icons": "^4.6.0",
+    "react-iframe": "^1.8.5",
     "react-leaflet": "^4.1.0",
     "react-modal": "^3.16.1",
     "react-portal-popout": "^1.9.3",
@@ -27,6 +28,7 @@
     "react-youtube": "^10.0.0",
     "sass": "^1.55.0",
     "styled-components": "^5.3.6",
+    "use-sound": "^4.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

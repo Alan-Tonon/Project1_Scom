@@ -20,6 +20,7 @@
     align-items: stretch;
     gap: 2rem;
     padding: 0 1rem;
+    font-size: 2rem;
   }
   
   .site-title {

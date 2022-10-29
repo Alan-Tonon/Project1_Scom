@@ -3,6 +3,8 @@ import {HomeImage, HomeTitle, HomeText, ButonStyle, HomeFlex, YtbFlex, Map} from
 
 import Card from "../../Components/BoxFlip/Crd";
 
+import WhatsApp from "../../Components/Whats_button/index";
+
 import "../../Components/BoxFlip/styles.css";
 import ScrollButton from "../../Components/ScrollBack/index";
 
@@ -13,7 +15,7 @@ import FucYoutube from "../../Components/Youtube/index";
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
 
-import LoLmap from '../../image/LoLmap.png'
+import Batata from "../Dados/index";
 
 //map things 
 import {MapContainer,ImageOverlay, Popup, Marker, Tooltip} from 'react-leaflet'
@@ -53,6 +55,12 @@ const Home = () => {
     return (
     <HomeFlex>
     {/*<Popup/>*/}
+
+    <HomeImage>  
+        <WhatsApp/>
+            <p>Runeterra</p> 
+            <ScrollButton/>  
+    </HomeImage>
 
     <MapContainer zoom = {1}  maxBounds = {mbounds} maxZoom={3} bounds = {bounds}>
         <ImageOverlay

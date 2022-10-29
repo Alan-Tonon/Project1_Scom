@@ -4,12 +4,12 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        Site Name
+        League of Unespianos
       </Link>
       <ul>
+        <CustomLink to="/originalweb">Site Original</CustomLink>
         <CustomLink to="/Classes">Classe</CustomLink>
         <CustomLink to="/raca">Raca</CustomLink>
-        <CustomLink to="/quiz">Quiz</CustomLink>
         <CustomLink to="/dados">Dados</CustomLink>
         <CustomLink to="/email">Email</CustomLink>
       </ul>

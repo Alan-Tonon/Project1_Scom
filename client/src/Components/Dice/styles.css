@@ -1,0 +1,36 @@
+body {
+    background: url(https://uploads.codesandbox.io/uploads/user/fcb69382-9512-4502-83ee-23b0aaa4e62d/S6mQ-newbackground@3x.png)
+      #7c8f1c;
+  }
+  
+  .badge {
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+  }
+  
+  .dice {
+    margin-top: 2.5em;
+    padding: 20px;
+  }
+  
+  .dice1 {
+    margin-right: 8px;
+  }
+  
+  .dice2 {
+    margin-left: 8px;
+  }
+  
+  button {
+    margin-top: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 1px #d12337 solid;
+    border-radius: 6px;
+    background-color: #d12337;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 17px;
+    outline-style: none;
+  }

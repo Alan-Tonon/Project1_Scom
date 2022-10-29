@@ -39,12 +39,7 @@ h1, h2, h3, label, input[type="submit"]{
 	color: #ffffff;
 }
 
-fieldset{
-	padding: 10px;
-	margin: 10px;
-	border:1px dashed #F2E527;
-	font-weight: bold;
-}
+
 
 legend{
 	margin-left: 35px;

@@ -48,9 +48,7 @@ function Email() {
       </header>
       <main>
         <fieldset>
-          <legend>
-            <h2> Presenteie quem você ama com uma mensagem...</h2>
-          </legend>
+         
           <form onSubmit={SendEmail}>
             <input type="text" name="remetente" placeholder="Nome do remetente" 
               onChange={(e) => {setRemetente(e.target.value);}} value={remetente}
