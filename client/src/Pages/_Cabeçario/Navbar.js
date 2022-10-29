@@ -8,6 +8,7 @@ export default function Navbar() {
       </Link>
       <ul>
         <CustomLink to="/originalweb">Site Original</CustomLink>
+        <CustomLink to="/mapa">Mapa</CustomLink>
         <CustomLink to="/Classes">Classe</CustomLink>
         <CustomLink to="/raca">Raca</CustomLink>
         <CustomLink to="/dados">Dados</CustomLink>

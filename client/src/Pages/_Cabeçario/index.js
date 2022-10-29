@@ -7,6 +7,7 @@ import OriginalWeb from "../PaginaOriginal/index";
 import { Route, Routes } from "react-router-dom"
 import Song from "./Song"
 import Dice from "../Dados/index"
+import Map from "../Mapa";
 
 function Top() {
   return (
@@ -22,6 +23,7 @@ function Top() {
           <Route path="/dados" element={<Dice />} />
           <Route path="/email" element={<Email />} />
           <Route path="/autatication" element={<Email />} />
+          <Route path="/mapa" element={<Map />} />
         </Routes>
       </div>
 
