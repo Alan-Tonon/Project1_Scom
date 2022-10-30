@@ -1,13 +1,13 @@
-import Top from "./Pages/_Cabeçario";
+import RegisterScreen from "./Pages/Login/index";
 import { BrowserRouter } from "react-router-dom"
 import "./Pages/_Cabeçario/styles.css"
-
+import "./App.css";
 
 
 function App() {
   return (
     <BrowserRouter>
-    <Top/>
+      <RegisterScreen/>
     </BrowserRouter>
   );
 }
