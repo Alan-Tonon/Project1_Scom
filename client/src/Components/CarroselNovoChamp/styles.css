@@ -1,0 +1,33 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10%;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .item {
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .cur {
+    display: block;
+  }
+  .next {
+    display: none;
+  }
+  
+  .item img {
+    width: 80%;
+    height: 600px;
+    object-fit: cover;
+  }
+
+ 
+  
