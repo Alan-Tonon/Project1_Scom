@@ -2,6 +2,12 @@ import styled from 'styled-components';
 
 import LoLmap from '../../image/LoLmap.jpg'
 
+export const HomeFlex = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+`
 export const HomeTitle = styled.div`
     background-color: #010;
     color: #FFFFFF;
@@ -13,15 +19,22 @@ export const HomeTitle = styled.div`
     
     display: flex;
     justify-content: center;
+    align-self: stretch;
 `
+
 export const HomeImage = styled.div`
-    background-color: #010;
+    padding: 4em;
     background-image: url(${LoLmap});
     width: 100%;
     height 100%;
     display: flex;
     justify-content: center;
-    
+    min-height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    flex-direction: column;
+    align-items: center;
     font-weight: bold;
     letter-spacing: 0.05em;
     flex-direction: column;
@@ -34,37 +47,35 @@ export const HomeImage = styled.div`
 
     align-items: center;
     justify-content: space-around;
-    position: absolute;
+    position: relative;
+    `
+    export const ButonStyle = styled.div`
+    display: inline-block;
+    background-image: linear-gradient(#171b21,#171b21),linear-gradient(#c89b3c,#785a28);
 
-   
-`
-export const ButonStyle = styled.div`
-display: inline-block;
-background-image: linear-gradient(#171b21,#171b21),linear-gradient(#c89b3c,#785a28);
+    background-clip: padding-box,border-box;
+    background-origin: padding-box,border-box;
+    border: 2px solid transparent;
 
-background-clip: padding-box,border-box;
-background-origin: padding-box,border-box;
-border: 2px solid transparent;
+    border: 4px double #cccccc;
+    color: #e0ee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 
-border: 4px double #cccccc;
-color: #e0ee;
-text-align: center;
-font-size: 28px;
-padding: 20px;
-width: 200px;
--webkit-transition: all 0.5s;
--moz-transition: all 0.5s;
--o-transition: all 0.5s;
-transition: all 0.5s;
-cursor: pointer;
-margin: 5px;
-
-font-weight: bold;
-    letter-spacing: 0.05em;
-    line-height: 100%;
-    text-transform: uppercase;
-    font-family: "Beaufort", Arial, sans-serif;
-    font-size: 14px;
+    font-weight: bold;
+        letter-spacing: 0.05em;
+        line-height: 100%;
+        text-transform: uppercase;
+        font-family: "Beaufort", Arial, sans-serif;
+        font-size: 14px;
 `
 
 export const HomeText = styled.div`
@@ -76,4 +87,21 @@ export const HomeText = styled.div`
     display: flex;
     justify-content: center;
     margin: 10px;
+    align-self: stretch;
 `
+
+export const YtbFlex = styled.div`
+    width: 100%;
+    height 100%;
+    justify-content: center;
+    margin: 10px;
+    align-self: stretch;
+`
+
+export const Map = styled.img`
+    width: 100hv;
+    height: 100hv;
+    z-index: -1;
+    
+    position: absolute;
+`;

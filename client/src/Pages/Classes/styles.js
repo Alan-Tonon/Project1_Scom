@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
-import LoLmap from '../../image/LoLmap.jpg'
+import Blood from './image/blood.gif'
 
 export const HomeImage = styled.div`
-background-color: #010;
-background-image: url(${LoLmap});
+
 width: 100%;
-height 100%;
+height 50%;
 display: flex;
 justify-content: center;
 
@@ -23,6 +22,14 @@ margin-bottom: 15px;
 align-items: center;
 justify-content: space-around;
 position: absolute;
+
+
+`
+
+export const BackGround = styled.div`
+background-image: url(${Blood});
+background-color: #BB0A1E;
+
 
 
 `

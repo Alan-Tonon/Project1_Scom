@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import ReactModal from 'react-modal';
-import {HomeImage, HomeTitle, HomeText, ButonStyle } from "./styles";
+import {HomeImage, ButonStyle } from "./styles";
+import VideoPlayer from "react-background-video-player";
+import Aurelion from "./video/Aurelion1.mp4";
  
 function Popup() {
   const [isOpen, setIsOpen] = useState(true);
@@ -8,25 +10,32 @@ function Popup() {
   return (
     <div>
    
-
+        <div>
         <ReactModal
             isOpen={isOpen}
-            contentLabel="Example Modal"
-            //onRequestClose={() => setIsOpen(false)}
-        
         >
-            <HomeImage>        
-        <p>Runeterra</p>
-        <ButonStyle>
-        <button onClick={() => setIsOpen(false)}>
-                Open Modal
-            </button>
-        </ButonStyle>        
+      <VideoPlayer
+  
+        src={
+          Aurelion
+        }
+        autoPlay={true}
+        muted={false}
+      />
+      <div>
+      <HomeImage>  
+        
+        <p>Você Deseja entrar no site mesmo ?</p>
+  
+        <ButonStyle onClick={() => setIsOpen(false)}>
+                Sim
+            </ButonStyle>
+           
     </HomeImage>
+      </div>
       </ReactModal>
+    </div>
 
-
-      
     </div>
   );
 }

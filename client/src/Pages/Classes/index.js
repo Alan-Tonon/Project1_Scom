@@ -1,32 +1,30 @@
 import React from "react";
-import "./styles.css";
-import Modal from "react-modal";
+import ProgressBar from "../../Components/ProgressBar/index";
+import GuiaReact from "../../Components/ReactGuia/index";
+import { BackGround,HomeImage  } from "./styles";
+import Sound from "../../Components/Som/index";
 
-Modal.setAppElement("#root");
 
 export default function App() {
-  const [modalIsOpen, setIsOpen] = React.useState(false);
+  
 
   return (
-    <div className="App">
-      <button onClick={() => setIsOpen(true)}>Open Modal</button>
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={() => setIsOpen(false)}
-        overlayClassName={{
-          base: "overlay-base",
-          afterOpen: "overlay-after",
-          beforeClose: "overlay-before"
-        }}
-        className={{
-          base: "content-base",
-          afterOpen: "content-after",
-          beforeClose: "content-before"
-        }}
-        closeTimeoutMS={500}
-      >
-        <button onClick={() => setIsOpen(false)}>Close Modal</button>
-      </Modal>
+    <>
+    <div>
+      <BackGround>
+        <HomeImage>
+        <p>Olhe cOm aTenÇão A pAGina !&$J</p>
+        </HomeImage>
+      
+      <ProgressBar/>
+      
+      <GuiaReact/>
+
+      <Sound/>
+
+      </BackGround>
+
     </div>
+    </>
   );
 }
