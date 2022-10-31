@@ -41,7 +41,7 @@ Prompt CMD/ Powershell/ VScode Terminal:
 #=============#=============#==============#=============#=============#=============#
 
 Inicialization:
-- "npm run dev" in client folder
+- "npm run dev" in server folder
 ---------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/84092545/199063196-f42ad97c-a270-482d-9570-bbd8f45a85d4.png)
 
