@@ -4,7 +4,7 @@ Site League of Legends Scom
 #=============#=============#==============#=============#
 
 Installation:
-In folder selected utilize Arquive Button -> PowerShell
+In folder selected utilize Arquive Button -> PowerShell -> git clone https://github.com/Alan-Tonon/Project1_Scom.git
 
 The program Node.js and Git
 
