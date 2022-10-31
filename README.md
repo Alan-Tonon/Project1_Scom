@@ -1,7 +1,7 @@
 # Project1_Scom
 Site League of Legends Scom
 
-#=============#=============#==============#=============#=============#=============#
+#=============#=============#==============#=============#
 
 The program Node.js and Git
 - Git : https://git-scm.com/download/win
@@ -10,7 +10,7 @@ The program Node.js and Git
 - Node.js :https://nodejs.org/en/download/
 ![image](https://user-images.githubusercontent.com/84092545/199061872-8cbecfa0-fc24-4f93-a0fb-a5f0c28c31b6.png)
 
-#=============#=============#==============#=============#=============#=============#
+#=============#=============#==============#=============#
 
 Installation:
 In folder selected utilize Arquive Button -> PowerShell -> git clone https://github.com/Alan-Tonon/Project1_Scom.git
@@ -19,7 +19,7 @@ In folder selected utilize Arquive Button -> PowerShell -> git clone https://git
 --------------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/84092545/199061207-b37cb512-6947-4814-96fb-8774eef90c5b.png)
 
-#=============#=============#==============#=============#=============#=============#
+#=============#=============#==============#=============#
 
 Prompt CMD/ Powershell/ VScode Terminal:
 - 1 or 2 times "npm install" in client folder
@@ -29,7 +29,7 @@ Prompt CMD/ Powershell/ VScode Terminal:
 --------------------------------------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/84092545/199062677-47ca7abb-1187-44bf-8d0c-4283f3c414dc.png)
 
-#=============#=============#==============#=============#=============#=============#
+#=============#=============#==============#=============#
 
 - "npm install" in server folder
 ![image](https://user-images.githubusercontent.com/84092545/199062816-ff1ba64e-badd-4895-b8bf-c66062d709b3.png)
@@ -38,7 +38,7 @@ Prompt CMD/ Powershell/ VScode Terminal:
 ---------------------------------------------------------------------------------------
 ![image](https://user-images.githubusercontent.com/84092545/199063068-a7a3a454-208c-48d8-92ac-42e6a88e1a74.png)
 
-#=============#=============#==============#=============#=============#=============#
+#=============#=============#==============#=============#
 
 Inicialization:
 - "npm run dev" in server folder
