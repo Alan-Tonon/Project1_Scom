@@ -8,8 +8,8 @@ Installation:
 The program Node.js and Git
 
 Prompt CMD/ Powershell/ VScode Terminal:
-- npm install in client folder
-- npm install in server folder
+- "npm install" in client folder
+- "npm install" in server folder
 
 Inicialization:
 - "npm run dev" in client folder
