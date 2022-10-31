@@ -4,6 +4,7 @@ Site League of Legends Scom
 #=============#=============#==============#=============#
 
 Installation:
+In folder selected utilize Arquive Button -> PowerShell
 
 The program Node.js and Git
 
