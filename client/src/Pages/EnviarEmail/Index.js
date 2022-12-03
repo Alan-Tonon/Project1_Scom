@@ -1,6 +1,9 @@
 import React,{useState} from 'react';
 import emailjs from 'emailjs-com';
 import './styles.css';
+import Navbar from "../_Cabeçario/Navbar";
+import CommentIO from "../../Components/Comment/index";
+import TextoAnimado from "../../Components/Text_Animation/App";
 
 
 function Email() {
@@ -43,6 +46,7 @@ function Email() {
 
   return (
    <>
+      <Navbar/>
       <header>
         <h1>Sistema de envio de mensagens por e-mail</h1>
       </header>
@@ -77,6 +81,8 @@ function Email() {
       </main>
       <footer>
       </footer>
+      <CommentIO/>
+      <TextoAnimado/>
    </>
   );
 }

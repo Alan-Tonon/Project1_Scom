@@ -1,14 +1,15 @@
-import RegisterScreen from "./Pages/Login/index";
 import { BrowserRouter } from "react-router-dom"
 import "./Pages/_Cabeçario/styles.css"
 import "./App.css";
 
+import RoutesApp from "../src/Components/Autenticação/routes";
+import { AuthProvider } from "../src/Components/Autenticação/contexts/auth";
 
 function App() {
   return (
-    <BrowserRouter>
-      <RegisterScreen/>
-    </BrowserRouter>
+    <AuthProvider>
+    <RoutesApp />
+  </AuthProvider>
   );
 }
 export default App;

@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import axios from 'axios'
-
+import Navbar from "../_Cabeçario/Navbar";
 import {HomeFlex} from "../Home/styles";
 
 //map things 
 import {MapContainer,ImageOverlay, Popup, Marker, Tooltip} from 'react-leaflet'
 
 export default function Map() {
+
+    
     const [backendData, setBackendData] = useState([])
 
     useEffect(()=>{
@@ -39,6 +41,8 @@ export default function Map() {
     const ilhaDasSombrasPos= [-68, 450]
 
     return(
+        <>
+        <Navbar/>
         <div>
             <HomeFlex>
             <MapContainer zoom = {1}  maxBounds = {mbounds} maxZoom={3} bounds = {bounds}>
@@ -123,5 +127,7 @@ export default function Map() {
             </MapContainer>
             </HomeFlex>
         </div>
+        </>
+        
     )
 };

@@ -1,14 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
 import {HomeImage, HomeText, HomeFlex, YtbFlex} from "./styles";
-
 import WhatsApp from "../../Components/Whats_button/index";
-
 import ScrollButton from "../../Components/ScrollBack/index";
-
 import Popup from "../../Components/Popup/index";
-
 import FucYoutube from "../../Components/Youtube/index";
-
+import Navbar from "../_Cabeçario/Navbar";
 import React, {useEffect, useState} from 'react';
 import axios from 'axios'
 
@@ -24,6 +20,8 @@ const Home = () => {
       },[])
 
     return (
+        <>
+        <Navbar/>
     <HomeFlex>
         <Popup/>
         <ScrollButton/> 
@@ -47,6 +45,7 @@ const Home = () => {
 
 
     </HomeFlex>
+    </>
    );
   }
   

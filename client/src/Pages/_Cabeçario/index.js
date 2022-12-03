@@ -5,17 +5,17 @@ import Campeoes from "../Campeoes/index"
 import Email from "../EnviarEmail/Index";
 import OriginalWeb from "../PaginaOriginal/index";
 import { Route, Routes } from "react-router-dom"
-import Song from "./Song"
 import Map from "../Mapa";
+import { Fragment } from "react";
 
 function Top() {
   return (
     <>
-      <Navbar/>
       <div className="Top">
-        <Song/>
+
+
         <Routes>
-          <Route path="/" element={<Home/>} />
+        <Route path="/" element={<Home/>} />
           <Route path="/originalweb" element={<OriginalWeb/>} />
           <Route path="/cuidado" element={<Cuidado/>} />
           <Route path="/campeoes" element={<Campeoes />} />
@@ -29,4 +29,4 @@ function Top() {
   )
   }
 
-  export default Top
+  export default Top 

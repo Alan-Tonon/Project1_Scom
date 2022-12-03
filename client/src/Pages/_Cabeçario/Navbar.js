@@ -1,9 +1,12 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
-
+import Song from "./Song";
 export default function Navbar() {
   return (
+    <>
+    
+    
     <nav className="nav">
-      <Link to="/" className="site-title">
+      <Link to="/login" className="site-title">
         League of Unespianos
       </Link>
       <ul>
@@ -14,6 +17,10 @@ export default function Navbar() {
         <CustomLink to="/email">Email</CustomLink>
       </ul>
     </nav>
+
+    <Song/>
+    </>
+
   )
 }
 
